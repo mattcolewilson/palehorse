@@ -1,4 +1,4 @@
-body {margin: 10vw; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+body {margin: 5vw 10vw 5vw; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
 
 html{scroll-behavior: smooth;}
 
