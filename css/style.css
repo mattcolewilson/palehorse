@@ -1,4 +1,4 @@
-body {margin: 10vh; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+body {margin: 10vw; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
 
 html{scroll-behavior: smooth;}
 
@@ -20,6 +20,7 @@ img {width: 100%;}
 
 @media (max-width: 1000px) {
 columns {grid-template-columns: 1fr;}
+margin: 5vw;
 }
 
 @media (prefers-color-scheme: dark) {
