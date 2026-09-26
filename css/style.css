@@ -18,6 +18,12 @@ hr {border: none; height: 1px; background-color: var(--text); opacity: .2; margi
 
 img {width: 100%;}
 
+video {
+	overflow: hidden;
+	width: 100%;
+}
+
+
 @media (max-width: 1000px) {
 columns {grid-template-columns: 1fr;}
 margin: 5vw;
