@@ -1,4 +1,4 @@
-body {margin: 5vh; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+body {margin: 10vh; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
 
 html{scroll-behavior: smooth;}
 
@@ -20,12 +20,6 @@ img {width: 100%;}
 
 @media (max-width: 1000px) {
 columns {grid-template-columns: 1fr;}
-h1, h2{margin-bottom:0;}
-.right {text-align: left;}
-div.logo {margin-left: 0;}
-.headshot {display: none;}
-.drag {display: none;}
-.mii {display: none;}
 }
 
 @media (prefers-color-scheme: dark) {
