@@ -12,7 +12,7 @@ columns {
 * {font-family: sans-serif;}
 a {color: var(--text);}
 
-p, blockquote {max-width: 70ch;}
+p, blockquote {max-width: 70ch; line-height: 1.4;}
 
 hr {border: none; height: 1px; background-color: var(--text); opacity: .2; margin: 25px 0px 25px 0px;}
 
