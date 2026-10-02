@@ -9,7 +9,7 @@ columns {
   gap: 10px 3%;
 }
 
-* {font-family: sans-serif; line-height: 1.4;}
+* {font-family: sans-serif;}
 a {color: var(--text);}
 
 p, blockquote {max-width: 70ch;}
