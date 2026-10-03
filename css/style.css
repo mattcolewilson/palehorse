@@ -4,7 +4,7 @@ html{scroll-behavior: smooth;}
 
 columns {
   width: 100%; 
-  max-width: 1600px;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 3%;
