@@ -1,4 +1,4 @@
-body {max-width: 80%; margin: auto; margin-top: 4%; margin-bottomn: 2%; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+body {max-width: 80%; margin: auto; margin-top: 4%; margin-bottomn: 4%; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
 
 html{scroll-behavior: smooth;}
 
