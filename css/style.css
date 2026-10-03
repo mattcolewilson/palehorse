@@ -30,7 +30,6 @@ columns {grid-template-columns: 1fr;}
 
 @media (prefers-color-scheme: dark) {
 body{ 
-margin: 4%;
 --text: silver;
 --bg: #121212;}
 }
