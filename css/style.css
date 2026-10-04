@@ -1,9 +1,9 @@
-body {margin: 2% 4% 2%; max-width: 80%; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+body {margin: 2% 4% 2%; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
 
 html{scroll-behavior: smooth;}
 
 columns {
-  width: 100%; 
+  width: 80%; 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
