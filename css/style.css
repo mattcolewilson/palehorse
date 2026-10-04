@@ -27,7 +27,7 @@ video {
 
 @media (max-width: 800px) {
 columns {grid-template-columns: 1fr;}
-max-width: 100%; margin: auto; margin-top: 2%; margin-bottom: 2%;
+margin: 2%;
 }
 
 @media (prefers-color-scheme: dark) {
