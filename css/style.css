@@ -1,37 +1,164 @@
-body {margin-top: 4%; margin-left: 20%; margin-right: 20%; margin-bottom: 4%; background-color: var(--bg); color: var(--text); --text: #121212; --bg: #f9f9f9;} 
+           * { 
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                --textcolor: black;
+                --pagebg: white;
+                --sectionbg: white;
+                --links: #666666;
+                --mono: #2F2F2F;
+                --monobg: #eeeeee;
+            }
+   
+            @media (prefers-color-scheme: dark) {
+            *{
+            --textcolor: white;
+            --pagebg: #24242C;
+            --sectionbg: #34343C;
+            --links: #B2B2B2;
+            --mono: #ccc;
+            --monobg: #3f3f3f;
+            }
+            
+            p{
+            letter-spacing: .025em;
+            font-weight: 350;
+            }
+            }
 
-html{scroll-behavior: smooth;}
+            html{
+                background-color: var(--pagebg);
+                scrollbar-gutter: stable;
+            }
 
-columns {
-  width: 100%; 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3%;
-}
+            body {
+                font-size: 18px;
+                font-family: sans-serif;
+                line-height: 1.4;
+                color: var(--textcolor);
+                position: relative;
+                margin: 3%;
+                width: 43em;
+            }
 
-* {font-family: sans-serif;}
-a {color: var(--text);}
+            h1 {
+                font-size: 1em;
+                font-weight: 600;
+            }
 
-h1 {max-width: 60ch;}
+            a {
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                transition: 0.2s;
+                color: var(--links);
+            }
 
-p, blockquote {max-width: 70ch; line-height: 1.4;}
+            nav a:hover {
+                text-decoration-color: var(--links);
+                transition: 0.2s;
+            }
 
-hr {border: none; height: 1px; background-color: var(--text); opacity: .2; margin: 25px 0px 25px 0px;}
+            a.inert:hover{
+                text-decoration-color: transparent;
+            }
+            
+      		hr {
+      		border: none; height: 1px; background-color: var(--textcolor); opacity: .2; margin: 25px 0px 25px 0px;}
 
-img {width: 100%;}
+            section {
+            background: var(--sectionbg);
+			margin: 0;
+            display: none;
+			width: 100%;
+            }
 
-video {
-	overflow: hidden;
-	width: 100%;
-}
+            section:target {
+                display: block;
+            }
 
-@media (max-width: 1200px) {
-body {margin-top: 4%; margin-left: 4%; margin-right: 4%; margin-bottom: 4%;}
-columns {grid-template-columns: 1fr;}
-}
+            body:not(body:has(section:target)) section#home{
+                display: block;
+            }
 
-@media (prefers-color-scheme: dark) {
-body{ 
---text: silver;
---bg: #121212;}
-}
+            footer{
+                color: var(--links);
+                font-size: 85%;
+                width: 43em;
+            }
+            
+            footer a{
+                text-decoration: underline
+            }
+
+            h2 {
+                font-size: 2.5em;
+                font-weight: 700;
+                margin-top: .5em;
+                margin-bottom: .5em;
+                letter-spacing: -0.03em;
+            }
+
+            h3 {
+                font-size: 1.75em;
+                margin-top: 0.75em;
+                margin-bottom: .5em;
+                letter-spacing: -0.03 em;
+            }
+
+            p {
+                /* "p" is for paragraphs */
+                font-size: 1em;
+                letter-spacing: 0.02em;
+                width: min(60ch, 90vw);
+                margin-bottom: 1em;
+            }
+
+            p a{
+                text-decoration-color: var(--links);
+            }
+
+            span.mono {
+                font-family: monospace;
+                font-size: 0.9em;
+                color: var(--mono);
+                white-space: nowrap;
+                background-color: var(--monobg);
+                padding: 1px;
+                border-radius: 4px;
+            }
+
+            div.inline {
+                width: 36em;
+                max-width: 90vw;
+                margin-bottom: 2em;
+                margin-top: 2em;
+            }
+
+            .inline p{
+                font-size: 0.8em;
+                color: var(--links);
+                font-style: italic;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            @media only screen and (max-width: 680px) {
+                html{
+                    width: 100vw;
+                    overflow-x: hidden;
+                }
+                body {
+                    font-size: 16px;
+                    line-height: 1.6;
+                    width: 100vw;
+                }
+
+                nav{
+                    white-space: nowrap;
+                    font-size: 0.8;
+                }
+
+            }
