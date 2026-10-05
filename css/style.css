@@ -12,9 +12,9 @@
    
             @media (prefers-color-scheme: dark) {
             *{
-            --textcolor: white;
-            --pagebg: #24242C;
-            --sectionbg: #34343C;
+            --textcolor: silver;
+            --pagebg: #121212;
+            --sectionbg: #121212;
             --links: #B2B2B2;
             --mono: #ccc;
             --monobg: #3f3f3f;
@@ -145,15 +145,16 @@
                 height: auto;
             }
 
-            @media only screen and (max-width: 680px) {
+          @media only screen and (max-width: 680px) {
                 html{
-                    width: 100vw;
+                    width: 100%;
                     overflow-x: hidden;
                 }
                 body {
                     font-size: 16px;
                     line-height: 1.6;
-                    width: 100vw;
+                    width: 100%;
+                    margin: 4%;
                 }
 
                 nav{
