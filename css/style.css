@@ -92,3 +92,9 @@ body{
 --text: silver;
 --bg: #121212;}
 }
+
+@media only screen and (max-width: 680px) {
+html{
+width: 100vw;
+overflow-x: hidden;
+}
