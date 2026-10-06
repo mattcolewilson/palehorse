@@ -4,7 +4,7 @@ font-size: 18px;
 font-family: sans-serif;
 line-height: 1.4;
 color: var(--textcolor);
-position: relative;
+margin: 2rem;
 margin: 4%;
 max-width: 43em;
 overflow-x: hidden;
@@ -12,7 +12,7 @@ overflow-x: hidden;
 
 html{scroll-behavior: smooth;}
 
-* {font-family: sans-serif; color: var(--text); line-height: 1.4;}
+* {font-family: sans-serif; color: var(--text);}
 
 p, blockquote {max-width: 70ch;}
 
